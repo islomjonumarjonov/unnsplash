@@ -27,6 +27,7 @@ const API =
 function Home() {
   const [url, setUrl] = useState(API + random);
   const { data, isPending, error } = useFetch(url);
+  console.log(data);
 
   const setNewUrl = (url) => {
     setUrl(API + url);
